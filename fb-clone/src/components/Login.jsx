@@ -1,14 +1,19 @@
 import './login.css'
-import Signin from './Signin'
-
+import { h } from 'preact';
+import { route } from 'preact-router';
 export default function Login() {
+
+    const handleLoginClick = ()=>{
+        route("/login-second");
+    }
 
 
     return (
-        <div className="container mt-20">
+
+        <div className="container mt-5">
             <div className="row ">
-                <div className="col-2"></div>
-                <div className="col-6 left-side">
+                <div className="col-1"></div>
+                <div className="col-5 left-side" style={'margin-top: 80px;'}>
                     <h1 className="font-size">facebook</h1>
                     <p>Facebook helps you connect and share with the people in your life</p>
                 </div>
@@ -23,7 +28,7 @@ export default function Login() {
                                 <input type="password" className="form-control" id="floatingPassword" placeholder="Password"></input>
                                 <label for="floatingPassword">Password</label>
                             </div>
-                            <button className="btn btn-primary w-100 py-2 fw-bold bg-custom-color" type="submit">Log in</button>
+                            <button className="btn btn-primary w-100 py-2 fw-bold bg-custom-color" type="button" onClick={handleLoginClick}>Log in</button>
                             <div className=" text-center my-3">
                                 <a href="" className="text-decoration-none">Forgotten password?</a>
                             </div>
@@ -125,6 +130,7 @@ export default function Login() {
                     </div>
                 </div>
             </div>
+
         </div>
     )
 }
