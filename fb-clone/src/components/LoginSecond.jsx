@@ -1,8 +1,9 @@
-// LoginSecond.js
 import { h } from 'preact';
 import './login.css';
 
 export default function LoginSecond() {
+
+
     return (
         <div className="container">
             <div className="row d-flex justify-content-center align-items-start vh-100">
