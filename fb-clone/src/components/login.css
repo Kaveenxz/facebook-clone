@@ -31,3 +31,22 @@
     font-size: 29px;
     line-height: 38px;
 }
+.radio-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 7px;
+}
+
+.radio-label input {
+    margin-left: 5px;
+}
+
+.modal-footer > .custom-btn {
+    background: #009814; 
+    margin: 0 30%;
+    font-size: large;
+    
+}
